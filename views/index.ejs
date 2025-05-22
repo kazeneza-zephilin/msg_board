@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>home</title>
+    </head>
+    <h1><%= title %></h1>
+    <bod>
+        <% messages.forEach(msg => { %>
+            <p><%= msg.text %></p>
+            <p><%= msg.user %></p>
+            <p><%= msg.added.toLocaleString() %></p>                        
+        <%})%>
+    </bod>
+</html>
