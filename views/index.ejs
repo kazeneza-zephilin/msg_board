@@ -3,11 +3,12 @@
         <title>home</title>
     </head>
     <h1><%= title %></h1>
-    <bod>
+    <body>
         <% messages.forEach(msg => { %>
             <p><%= msg.text %></p>
             <p><%= msg.user %></p>
             <p><%= msg.added.toLocaleString() %></p>                        
         <%})%>
-    </bod>
+        <a href="http://localhost:3000/new">new message</a>
+    </body>
 </html>
