@@ -9,6 +9,8 @@
             <p><%= msg.user %></p>
             <p><%= msg.added.toLocaleString() %></p>                        
         <%})%>
-        <a href="http://localhost:3000/new">new message</a>
+        <form method="GET" action="/new/">
+            <button type="submit">new message</button>
+        </form>
     </body>
 </html>
